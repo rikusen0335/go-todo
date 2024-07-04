@@ -31,13 +31,13 @@ func Init() {
 			Bold(true).
 			Background(lipgloss.Color("192")).
 			Foreground(lipgloss.Color("0")),
-			log.ErrorLevel: lipgloss.NewStyle().
+		log.ErrorLevel: lipgloss.NewStyle().
 			Padding(0, 1, 0, 1).
 			SetString(strings.ToUpper(log.ErrorLevel.String()[:4])).
 			Bold(true).
 			Background(lipgloss.Color("204")).
 			Foreground(lipgloss.Color("0")),
-			log.FatalLevel: lipgloss.NewStyle().
+		log.FatalLevel: lipgloss.NewStyle().
 			Padding(0, 1, 0, 1).
 			SetString(strings.ToUpper(log.FatalLevel.String()[:4])).
 			Bold(true).
